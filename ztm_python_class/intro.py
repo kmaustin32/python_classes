@@ -122,8 +122,3 @@ print(3 in basket) # should return true
 print(basket.count(4)) # should return 1, as there is 1 instance of 4
 
 # .sort() will sort a list, has no return value, so don't print it. sorted(arr) will produce a new array. .copy() will copy and return. .reverse() will do exactly what you think it will. Try sorting before reversing. 
-
-
-
-
-

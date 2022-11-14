@@ -86,6 +86,39 @@ birth_year = input("When were you born? >> ")
 age = abs(int(birth_year) - 2022)
 print(age)
 
+# Password check exercise
 
+user_name = input("Please enter a user name >>  ")
+password = input("Please input a password >> ")
+pass_len = len(password)
 
+print(f"Hi {user_name} your password {pass_len * '*'} is {pass_len} long.")
 
+# Remember, setting one list to another will point to the same memory location. if you need to duplicate a list, set list2 = list1[:] to slice the list. So, a list is just basically a JS array. 
+
+# What about a matrix? This is a multidemensional array. 
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Again, much like in JS, accessing nested arrays will be like matrix[0][2] to grab the number 3 from the above matrix. 
+
+basket = [1, 2, 3, 4, 5]
+basket.append(100)
+new_basket = basket
+print(new_basket)
+
+# .append(), .insert(), etc modify in place, does not create the copy of the list, so you need to make a new variable. .extend([]) takes another list, and adds the values in another list. 
+
+# .pop() removes, as you may imagine. By default, removes the final item in the list. You can add the index of the element as an argument. .remove() will actually take a specific value and remove it. Pop will return the removed item.
+
+new_basket.pop()
+
+# .clear() will remove the list, as you might imagine. .index(x) will take a value and tell me where it is in the list. You can tell it where to start and stop looking as additional arguments, .index(x, 15, 30).
+
+print(3 in basket) # should return true
+print(basket.count(4)) # should return 1, as there is 1 instance of 4
+
+# .sort() will sort a list, has no return value, so don't print it. sorted(arr) will produce a new array. .copy() will copy and return. .reverse() will do exactly what you think it will. Try sorting before reversing. 

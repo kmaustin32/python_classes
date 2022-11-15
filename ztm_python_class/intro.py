@@ -122,3 +122,63 @@ print(3 in basket) # should return true
 print(basket.count(4)) # should return 1, as there is 1 instance of 4
 
 # .sort() will sort a list, has no return value, so don't print it. sorted(arr) will produce a new array. .copy() will copy and return. .reverse() will do exactly what you think it will. Try sorting before reversing. 
+
+# you can reverse a list with slice
+basket[::-1]
+
+# create a list. range(100) will go 0-99, because computers.
+list(range(1,100))
+
+# What about .join(). It creates a new string, so you need a new variable
+join_sentence = ' '
+new_sentence = join_sentence.join(['Hi', 'my', 'name', 'is', 'JOJO'])
+
+# List unpacking. Assign variables from an established list. 
+to_unpack = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+a, b, c, *other, d = to_unpack
+
+# What is None? It's an important keyword/data type. It's the absence of value, much like null in JS. Like, initiate a variable with no value. 
+
+weapons = None
+
+# Dictionaries. This is an Object, or a Hashtable. 
+
+user_data = {
+    'name': 'Keenan',
+    'age': 30,
+    'coding': True,
+    'my_list': [1, 3, 5, 7, 9]
+}
+
+print(user_data['my_list'][2])
+
+# You can check if a key exists with .get() and you can add a default value if it doesn't exist as well.
+
+print(user_data.get('fav_food', 'shawarma'))
+
+user2 = dict(name='JohnJohn')
+
+print('age' in user_data.keys())
+print(True in user_data.values())
+
+# dict.items() will return tuples, which I don't know what those are. and, of course, .clear() will clean out the object. .pop(key) will remove that key/value pair and returns what was removed. .popitem() will remove last entered. .update will do that it sounds like. 
+
+user_data.update({'age': 31})
+
+# Tuple is like an immutible list. No sorting, reversing, etc. It may be accessed through an index. 
+my_tuple = (1, 2, 3, 4, 5)
+
+# Why do we need this? If you never need to change the list, it tells other programmers not the change the list. Slightly faster than a list. Like, lat, long will not change on a map. 
+
+# SETS, let's gooooooo. These are unordered lists of unique objects. 
+
+my_set = {1, 2, 3, 4, 5, 5, 3, 5}
+print(my_set) # Should return {1, 2, 4}
+
+# You can convert a list to a set with the set() function. 
+# A set grabs by item name, not by index. 
+
+
+
+
+
